@@ -11,8 +11,10 @@ const lion = {
 
 // 나이를 추가하는 함수입니다.
 function incrementAge(lion) {
-    return lion.나이 + 1;
+    lion.나이 += 1;
+    return lion.나이;
 }
+
 
 //사자에 새로운 속성을 추가하는 함수를 만들어보세요! (ex. 다리: 4개)
 const newLion = Object.assign(lion, {leg :4});
@@ -20,4 +22,6 @@ console.log(newLion);
 
 
 // 함수 실행 이후 사자의 현재 나이를 출력합니다.
+console.log(incrementAge(lion))
+console.log(incrementAge(lion))
 console.log(incrementAge(lion))
